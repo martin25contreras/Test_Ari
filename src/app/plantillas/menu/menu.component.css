@@ -1,0 +1,20 @@
+.content{
+    background-color: sienna;
+}
+
+a{
+    position: relative;
+}
+.menu{
+    background-color: brown;
+    width: 15%;
+}
+
+.menu:hover, .subm{
+    background-color: burlywood;
+}
+.subm{
+
+    background-color: brown;
+    width: 100%;
+}

@@ -1,0 +1,25 @@
+<app-menu></app-menu>
+<body>
+  <div class="well">
+      <table id="table" align="center">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Patronus</th>
+            <th>Age</th>
+            <th>Image</th>
+            <th style="width: 36px;"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">{{ nuevo.name}}</td>
+            <td>{{ nuevo.patronus }}</td>
+            <td>{{2021 - nuevo.yearOfBirth }}</td>
+            <td><img src="{{ nuevo.image }}"/></td>
+          </tr>
+          <tr>
+        </tbody>
+      </table>
+  </div>
+</body>

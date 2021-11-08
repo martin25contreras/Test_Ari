@@ -1,0 +1,11 @@
+<div class="content" style="align-self: center;">
+    <a mat-button [matMenuTriggerFor]="personajes" class="menu"> Personajes </a>
+    <mat-menu #personajes="matMenu">
+        <a mat-menu-item (click)="gryff()" class="subm">Gryffindor</a>
+        <a mat-menu-item (click)="slyth()" class="subm">Slytherin</a>
+        <a mat-menu-item (click)="raven()" class="subm">Ravenclaw</a>
+        <a mat-menu-item (click)="huff()" class="subm">Hufflepuff</a>
+    </mat-menu>
+    <a mat-button (click)="estudiantes()" class="menu"> Estudiantes </a>
+    <a mat-button (click)="profesores()" class="menu"> Profesores </a>
+</div>

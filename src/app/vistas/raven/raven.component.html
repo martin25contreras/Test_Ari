@@ -1,0 +1,27 @@
+<app-menu></app-menu>
+
+<body>
+  
+<div class="well">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Patronus</th>
+          <th>Age</th>
+          <th>Image</th>
+          <th style="width: 36px;"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let personaje of personajes">
+          <td scope="row">{{ personaje.name }}</td>
+          <td>{{ personaje.patronus }}</td>
+          <td>{{ 2021 - personaje.yearOfBirth }}</td>
+          <td><img src="{{ personaje.image }}"/></td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+  
+</body>

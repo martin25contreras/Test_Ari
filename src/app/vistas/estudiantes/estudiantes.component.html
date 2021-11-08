@@ -1,0 +1,31 @@
+<app-menu></app-menu>
+
+<body>
+  <div class="container" id="tabla">
+    <div class="btn-toolbar">
+        <button class="btn btn-primary" (click)="nuevoEstudiante()">Nuevo estudiante</button>
+    </div>
+    <div class="well">
+        <table align="center">
+          <thead align="center">   
+            <tr>
+              <th align="center">Name</th>
+              <th align="center">Patronus</th>
+              <th align="center">Age</th>
+              <th align="center">Image</th>
+              <th style="width: 36px;"></th>
+            </tr>
+          </thead>
+          <tbody align="center">
+            <tr *ngFor= "let estudiante of estudiantes">
+              <td scope="row">{{ estudiante.name}}</td>
+              <td>{{ estudiante.patronus }}</td>
+              <td>{{2021 - estudiante.yearOfBirth }}</td>
+              <td><img src="{{ estudiante.image }}"/></td>
+            </tr>
+            <tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</body>
